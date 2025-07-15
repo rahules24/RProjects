@@ -1,75 +1,52 @@
-# R Projects 📈
+# 📈R Projects
 
-A curated collection of projects created using **R** for data analysis, visualization, and statistical inference. This repository reflects a progression of analytical depth and visual clarity—from basic plots to insightful, publication-grade graphics.
+This repository showcases personal data visualization and analysis projects using R, focused on exploratory insights, perceptual accuracy, and storytelling through plots.
 
-## 🧠 About the Author
+## 📊 Contents
 
-Crafted by Ráhul, a passionate data analyst and visualization specialist, with particular expertise in R, ggplot2, and graphical storytelling grounded in **matplotlib-style principles**—including perceptual precision, graphical integrity, and visual clarity.
+- `finalProj_rahul.r`  
+  The primary R script for the final project, analyzing 35 years of Tokyo weather data to explain why Japan aligns its seasons with temperature instead of daylight. Complements the full write-up in `document.pdf`.
 
----
+- `plot1.R`, `plot2.R`  
+  Supporting visual experiments, generating `plot1.pdf` and `plot2.pdf` respectively.
 
-## 📂 Project Structure
+- `finalplot.pdf`, `LieFactor.pdf`  
+  Final visualizations including bar plots and supporting analysis of graphical integrity (e.g., Lie Factor).
 
-### 📁 `basicRplot/`
-Contains introductory plots using base R and simple ggplot syntax. Great for understanding:
-- Data manipulation basics
-- Plotting histograms, bar charts, and scatterplots
-- Customizing themes and axes
+- `tokyo_data.xlsx`  
+  Cleaned weather dataset used in the project, derived from a Kaggle source.
 
-### 📁 `multiGraphs/`
-Showcases the ability to generate comparative visualizations:
-- Faceted plots
-- Multi-panel layouts
-- Use of `gridExtra` and `patchwork` for figure composition
+- `document.pdf`  
+  The full written report detailing the background, method, observations, and conclusions of the final project.
 
-### 📁 `categoricalDataViz/`
-Focused on summarizing categorical variables:
-- Proportional bar plots
-- Mosaic charts
-- Legends and color palettes for clear group identification
+- `lie-factor-curve.py`  
+  A small Python script for verifying the Lie Factor calculation for one of the plots.
 
-### 📁 `finalProject/`
-> **“What Defines a Season”** — A capstone-level analysis integrating both theoretical reasoning and practical implementation.
+- `Lifespan-of-Cars_Infographic.jpg`  
+  A challenge-based infographic redesign. The original misleading graphic was analyzed for data integrity flaws, then redrawn accurately using Digimizer. The corrected version emphasizes truthful, minimalist design. See accompanying report for explanation.
 
-Analyzes 35 years of Japanese weather data to challenge and refine our understanding of seasonal definitions—specifically how Japan’s seasons align with **temperature** rather than **daylight**, contrary to Western astronomical conventions.
-
-#### 🔍 Highlights:
-- Rigorous dataset treatment from Kaggle (`tokyo_data.csv`)
-- Strong narrative using visual storytelling (via `ggplot2`)
-- Custom seasonal alignment of months for improved pattern recognition
-- Justification of plot choice via **graphical perception principles**
-- Expert use of `geom_smooth()` for enhancing interpretability
-- Advanced graphical integrity checks including **Lie Factor** validation
-
-📄 Read the full write-up: [`document.pdf`](./finalProject/document.pdf)
+- `Lifespan-of-Cars_Infographic.dgz`  
+  Digimizer project file containing original measurements and annotations.
 
 ---
 
-## 🔧 Tools & Packages
+## 📌 Purpose
 
-- **Core**: `ggplot2`, `dplyr`, `readr`, `tidyr`
-- **Advanced**: `gridExtra`, `patchwork`, `lubridate`, `scales`
-- **Philosophy**: Tufte’s principles of graphical excellence + Matplotlib-style minimalism
+This repo documents a hands-on exploration of:
+- Seasonality patterns in Japan
+- R-based plotting with `ggplot2`
+- Data cleaning and treatment
+- Design decisions backed by perception and graphical integrity theory
+- Graphical criticism and redesign (e.g., infographic challenge)
 
----
-
-## 🚀 How to Use
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/rahules24/RProjects.git
-   cd RProjects
-   ```
-
-2. Open your R environment (e.g., RStudio) and load the desired project folder.
-
-3. Run the `.R` scripts and explore the visualizations. For the final project, start with:
-   ```R
-   source("finalProject/finalProj_rahul.r")
-   ```
+The final project serves as both a **technical demonstration** and **visual argument**, showing both conceptual and practical skills in data communication.
 
 ---
 
-## 📌 Final Note
+## 🛠️ Tools Used
 
-This repository is more than code—it's a growing demonstration of analytical clarity, coding proficiency, and an eye for meaningful visuals. The final project especially showcases a mature blend of **data storytelling** and **domain reasoning**.
+- R (`ggplot2`, `readxl`)
+- Python (`matplotlib`, `numpy` for lie-factor script)
+- Excel (for data prep)
+- Digimizer (for measurement-based graphical correction)
+- Adobe Illustrator for cleaned visuals
